@@ -4,18 +4,6 @@ let outputValue = document.querySelector('#equal')
 // let btnEqual = document.querySelector(eval)
 
 // btnEqual.addEventListener('click', function()){}
-let var = [];
-let btnComma = document.querySelector('#dot');
-btnComma.addEventListener('click', function() {
-    if (!Array.includes('.')) {
-        Array.push('.')
-    }
-})
-let oper = document.querySelectorAll(.operator);
-operators.forEach(operator => {
-    screen.value += operator.textContent,
-    arr = [];
-})
 
 
 function display(number) {
