@@ -30,6 +30,15 @@ body {
     margin: 10vh auto 0 auto;
     box-shadow: #59C1BD 5px 5px 5px;
 }
+.numb-btn:hover {
+    background-color: #863A6F;
+}
+.symbols:hover {
+    background-color: #FFADBC;
+}
+.equalsign:hover {
+    background-color: #cff5e7;
+}
 .buttons {
     display: grid;
     border-bottom: 1px solid #59C1BD;
