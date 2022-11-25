@@ -39,6 +39,12 @@ body {
 .equalsign:hover {
     background-color: #6ECCAF;
 }
+.equal:hover {
+    background-color: #6ECCAF;
+}
+.delBtn:hover {
+    background-color: #6ECCAF;
+}
 .buttons {
     display: grid;
     border-bottom: 1px solid #59C1BD;
@@ -59,6 +65,14 @@ button {
     border-radius: 50px;
 }
 .equalsign {
+    grid-column: span 1;
+    background-color: #cff5e7;
+}
+.equal {
     grid-column: span 2;
+    background-color: #cff5e7;
+}
+.delBtn {
+    grid-column: span 1;
     background-color: #cff5e7;
 }

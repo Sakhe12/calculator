@@ -35,3 +35,7 @@ function clr() {
 const toggleAllowComma = () => {
     allowComa = true;
 } 
+
+function del() {
+    InputValue.value = InputValue.value.slice(0,-1);
+}

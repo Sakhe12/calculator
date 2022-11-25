@@ -14,6 +14,7 @@
                 <input class="display" type="text" id="input" placeholder="0">
             <div class="buttons">
             <button type="button" class="equalsign" onclick="clr()">AC</button>
+            <button type="button" class="delBtn" onclick="del()">Del</button>
             <button type="button" class="symbols" onclick="symbols('%')">%</button>
             <button type="button" class="symbols" onclick="symbols('+')">+</button>
             <button type="button" class="numb-btn" onclick="display('1')">1</button>
@@ -27,10 +28,10 @@
             <button type="button" class="numb-btn" onclick="display('7')">7</button>
             <button type="button" class="numb-btn" onclick="display('8')">8</button>
             <button type="button" class="numb-btn" onclick="display('9')">9</button>
-            <button type="button" class="symbols" onclick="symbols('*')">*</button>
+            <button type="button" class="symbols" onclick="symbols('*')">x</button>
             <button type="button" class="symbols" id="dot" onclick="displayDecimal('.')">.</button>
             <button type="button" class="numb-btn" onclick="display('0')">0</button>
-            <button type="button" class="equalsign" onclick="calculate('=')">=</button>
+            <button type="button" class="equal" onclick="calculate('=')">=</button>
         
             </div>
         </div>
