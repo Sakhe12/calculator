@@ -1,7 +1,7 @@
 let InputValue = document.querySelector("#input")
 let outputValue = document.querySelector('#equal')
 let allowComa = true;
-// let display = document.querySelector('.display')
+let screen = document.querySelector('.display')
 // let btnEqual = document.querySelector(eval)
 
 // btnEqual.addEventListener('click', function()){}
@@ -24,8 +24,14 @@ function calculate() {
     var p =document.getElementById("input").value;
     var q = eval(p);
     document.getElementById("input").value = q;
+    toggleAllowComma();
 }
 
 function clr() {
+    toggleAllowComma();
     InputValue.value = "";
 }
+
+const toggleAllowComma = () => {
+    allowComa = true;
+} 
