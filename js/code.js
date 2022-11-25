@@ -1,6 +1,6 @@
 let InputValue = document.querySelector("#input")
 let outputValue = document.querySelector('#equal')
-let dota = true;
+let allowComa = true;
 let screen = document.querySelector('.display')
 // let btnEqual = document.querySelector(eval)
 
@@ -11,27 +11,27 @@ function display(number) {
 
 //Formula to make the decimal clickable once per calculation
 function displayDecimal (number) {
-    if (dota === true) {
+    if (allowComa === true) {
         InputValue.value = InputValue.value + number
-        dota = false;
+        allowComa = false;
     }
 }
 function symbols (number) {
     InputValue.value = InputValue.value + number;
-    dota = true;
+    allowComa = true;
 }
 function calculate() {
     var p =document.getElementById("input").value;
     var q = eval(p);
     document.getElementById("input").value = q;
-    toggledota();
+    toggleAllowComma();
 }
 
 function clr() {
-    toggledota();
+    toggleAllowComma();
     InputValue.value = "";
 }
 
-const toggledota = () => {
+const toggleAllowComma = () => {
     allowComa = true;
 } 
