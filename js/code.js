@@ -6,14 +6,13 @@ let screen = document.querySelector('.display')
 
 // btnEqual.addEventListener('click', function()){}
 function display(number) {
-    InputValue.value = InputValue.value + number
-    allowComa = true;
+    InputValue.value = InputValue.value + number;
 }
 
 //Formula to make the decimal clickable once per calculation
 function displayDecimal (number) {
     if (allowComa === true) {
-        InputValue.value = InputValue.value + number
+        InputValue.value = InputValue.value + number;
         allowComa = false;
     }
 }
