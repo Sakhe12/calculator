@@ -7,6 +7,7 @@ let screen = document.querySelector('.display')
 // btnEqual.addEventListener('click', function()){}
 function display(number) {
     InputValue.value = InputValue.value + number
+    allowComa = true;
 }
 
 //Formula to make the decimal clickable once per calculation
@@ -35,6 +36,15 @@ function clr() {
 const toggleAllowComma = () => {
     allowComa = true;
 } 
+function islastDot() {
+    let x = (InputValue.value.length - 1);
+    if ((InputValue.value[x]).includes('.') ) {
+        return false;
+    }
+    else {
+        return true;
+    }
+}
 
 function del() {
     InputValue.value = InputValue.value.slice(0,-1);

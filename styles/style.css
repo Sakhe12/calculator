@@ -10,7 +10,9 @@
 body {
     background-color: #DEBACE !important;
     font-family: 'Syne Mono', monospace;
-    ;
+    display:flex;
+    align-items: center;
+    justify-content:center; 
 }
 .display {
    background-color: #EFF5F5;
@@ -18,6 +20,7 @@ body {
    background-image: url(../assets/pngwing.com.png);
    background-size: contain;
    background-repeat: no-repeat;
+   margin: auto;
    color: black;
    border-radius: 5px;
    width: 100%;
@@ -64,7 +67,7 @@ button {
     cursor: pointer;
     border-radius: 50px;
 }
-.equalsign {
+.equalsign,  .delBtn{
     grid-column: span 1;
     background-color: #cff5e7;
 }
@@ -72,7 +75,16 @@ button {
     grid-column: span 2;
     background-color: #cff5e7;
 }
-.delBtn {
+/* .delBtn {
     grid-column: span 1;
     background-color: #cff5e7;
+} */
+@media screen (min-width: 150px) {
+    .container {
+        width: 100%;
+        margin: auto;
+    }
+    body {
+        width: 100%;
+    }
 }
